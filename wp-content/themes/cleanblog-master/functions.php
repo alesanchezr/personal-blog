@@ -105,6 +105,9 @@ function cleanblog_scripts() {
     if ( is_page( 'resume' ) ) {
         wp_enqueue_style( 'resume_styles_css', get_template_directory_uri() . '/css/resume-styles.css'); 
     }
+    if ( is_page( 'startups' ) ) {
+        wp_enqueue_style( 'startups_styles_css', get_template_directory_uri() . '/css/startups-styles.css'); 
+    }
     if ( is_page( 'portfolio' ) ) {
         wp_enqueue_style( 'portfolio_styles_css', get_template_directory_uri() . '/css/portfolio-styles.css'); 
     }
@@ -184,9 +187,3 @@ function special_nav_class($classes, $item){
      }
      return $classes;
 }
-
-function home_page_menu_args( $args ) {
-$args['show_home'] = true;
-return $args;
-}
-add_filter( 'wp_page_menu_args', 'home_page_menu_args' );

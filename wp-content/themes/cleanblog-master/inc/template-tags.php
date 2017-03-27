@@ -276,15 +276,38 @@ if ( ! function_exists( 'cleanblog_header' ) ) :
  */
 function cleanblog_header() { ?>
 
+	
 	<?php if(is_single()) { ?>
 	
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 	<?php
-		$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		$postId = get_the_ID();
+		$post_type = get_post_type( $postId );
+		$feat_image = "";
+
+		if($post_type == 'project')
+		{
+			$repeat_image = get_post_meta( $postId, 'wpcf-background-img-repeat');
+			$feat_image = get_post_meta( $postId, 'wpcf-image-1');
+			$feat_image = $feat_image[0];
+			$post_tags = wp_get_post_tags($postId);
+			$projecturl = get_post_meta( $postId, 'wpcf-project-url');
+
+			$startdate = get_post_meta( $postId, 'wpcf-project-date');
+			if($startdate[0]) $projectdate = date('l jS \of F Y', $startdate[0]);
+		}
+		else $feat_image = wp_get_attachment_url( get_post_thumbnail_id($postId) );
+
 	?>
+    
+    <?php if($repeat_image[0]){ ?>
+    <header class="intro-header repeat-header" style="background-color: #404040; background-image: url('<?php echo $repeat_image[0]; ?>')">
+        <div class="container" style="background-image: url('<?php echo $feat_image; ?>')">
+	<?php } else { ?>
     <header class="intro-header" style="background-color: #404040; background-image: url('<?php echo $feat_image; ?>')">
-        <div class="container">
+        <div class="container" >
+	<?php } ?>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
@@ -292,7 +315,13 @@ function cleanblog_header() { ?>
 			<?php if ( function_exists( 'the_subtitle' ) ) {
 				the_subtitle( '<h2 class="subheading">', '</h2>' );
 			} ?>
+                        <?php if($post_type == 'project'){ ?>
+                        	<?php if($projecturl[0]){ ?><span class="meta project-url"><a href="<?php echo $projecturl[0]; ?>" target="_black"><?php echo $projecturl[0]; ?></a></span><?php } ?>
+                        	<?php if($projectdate){ ?><span class="meta">Project date: <?php echo $projectdate; ?></span><?php } ?>
+								<p><?php foreach ($post_tags as $tag) echo '<span class="project-technology">'.$tag->name.'</span>'; ?></p>
+						<?php } else { ?>
                         <span class="meta"><?php cleanblog_posted_on(); ?></span>
+						<?php } ?>
                     </div>
                 </div>
             </div>

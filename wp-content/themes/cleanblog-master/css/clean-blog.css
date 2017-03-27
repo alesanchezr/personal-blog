@@ -136,15 +136,21 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
-.intro-header {
+.intro-header .container{
+  background: no-repeat top center;
+}
+.intro-header{
   background-color: #808080;
-  background: no-repeat center center;
+  background: no-repeat top center;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+}
+.repeat-header{
+  background: repeat;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,

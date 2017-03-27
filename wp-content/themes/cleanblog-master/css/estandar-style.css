@@ -39,6 +39,14 @@
         margin-top: 1em;
     }
 
+
+/*
+ * Project
+ */
+
+.technologies-section h3{padding: 0; margin: 0 0 0.5em 0;}
+ .project-technology{background: #e95a44; padding: 0.4em; margin-right: 0.4em; margin-bottom: 1em; color: white; font-size: 1.5em; display: inline-block;}
+.project-url a{background: #3072AC; padding-left: 0.4em; padding-right: 0.4em;}
 /*
  * Sidebar
  */

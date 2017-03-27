@@ -4,7 +4,6 @@
  *
  * @package Clean Blog
  */
-
 ?>
 
 <?php the_content(); ?>

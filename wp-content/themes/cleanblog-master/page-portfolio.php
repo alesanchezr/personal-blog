@@ -24,7 +24,9 @@ get_header('estandar'); ?>
 			
 <?php
 $args = array(
-	'post_type' => 'project'
+	'post_type' => 'project',
+	'post_count' => -1,
+	'posts_per_page' => -1
 	);
 $custom_query = new WP_Query( $args );
 $cont = 0;
@@ -36,6 +38,7 @@ $cont = 0;
 	$permalink = get_the_permalink();
 
 	$image1 = get_post_meta( $postId, 'wpcf-image-1', false);
+	$exerp = get_post_meta( $postId, 'wpcf-project-exerp', false);
 	$post_tags = wp_get_post_tags($postId);
 	$thumb_url = $image1[0];
 ?>
@@ -44,15 +47,14 @@ $cont = 0;
 			<img src="<?php echo $thumb_url; ?>" alt="" style="top: 0px;">
 			<div class="bottom-label" style="top: 200px;">
 				<div class="label-text">
-					<a href="http://4geeks.geeksfactory.co/4geeks-portfolio&amp;id=112713" class="text-title"><?php echo $title; ?></a>
+					<a href="<?php echo $permalink; ?>" class="text-title"><?php echo $title; ?></a>
+					<div class="text-description">
+						<?php echo $exerp[0]; ?>
+					</div>
 					<ul class="text-category">
 
-					<div class="text-description">
-						<?php echo $description; ?>
-					</div>
 
-					<li>social-network,</li>
-
+					<li><?php foreach ($post_tags as $tag) echo '<span class="proj-tag">'.$tag->slug.'</span>'; ?></li>
 					</ul>
 				</div>
 				<div class="label-bg"></div>

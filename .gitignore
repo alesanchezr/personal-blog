@@ -93,6 +93,7 @@ Thumbs.db
 #!wp-content/plugins/nav-menu-roles/
 !wp-content/themes/cleanblog-master
 !wp-content/plugins/types
+!wp-content/plugins/thrive-visual-editor
 !config
 !.gitlab-ci.yml
 !Capfile
