@@ -14,20 +14,18 @@
 							
 							<div class="sectionContent">
 								<ul class="qualifications">
-									<li>Certificate in business administration by IESA Business School.
-									<li>Co-funder and CEO of a software company with $2 million dollars in revenues/year and 250 projects developed. The company was successfully sold.</li>
-									<li>7 yrs experience in digital marketing, leading campaigns with more than US $1 million budget for international billion dollar companies for TV and Internet. </li>
-									<li>Product design, development and launching for 15+ digital products, under agile methodologies (SCRUM), securing early users and bootstrapping revenues using strong online marketing strategies and campaigns.</li>
-									<li>Co-founder and director of marketing agency with $1.5 million dollar revenues and 32 employees with 5 years in the market.</li>
-									<li>Co-funder of 5 tech startups accelerated by the top LATAM incubators, taking part in business development and product management roles.</li>
-									<li>Solid managing skills, successfully leading teams with up to 10 people (directly) and 80 indirectly with a task and result driven philosophy.</li>
+									<li>Co-funder and CEO of 4Geeks Academy coding academy with 3 locations between Miami and Venezuela, 250+ graduates in 3 years in business.</li>
+									<li>Passionate software developer with 18 years of experience.</li>
+									<li>Co-founder and Tech Director of digital marketing agency with $1.5 million dollar revenues and 15 big brands as clients in Venezuela.</li>
+									<li>Co-funded 4Geeks Developers Community, software company with $2 million in revenues and hundres of products developed. The company was sold.</li>
+									<li>Computer Engineer and certificated in business administration by <a rel="nofollow" href="http://www.iesa.edu.ve/english">IESA Business School.</a>
 								</ul>
 							</div>
 							<div class="clear"></div>
 						</section>
 						<section>
 							<div class="sectionTitle">
-								<h1>BizDev and Marketing</h1>
+								<h1>As an entrepreneur</h1>
 							</div>
 							<div class="sectionContent">
 								<!--
@@ -40,7 +38,7 @@
 								<article>
 									<h2>Founder and CEO <small>Oct 2015 - Now.</small></h2>
 									<p class="subDetails">4Geeks Academy, Coding Academy - <a href="www.4GeeksAcademy.com">www.4GeeksAcademy.com</a></p>
-									<p>Co-founded and director of the company, an academy teaching people to code and build awesome digital products. The academy had 350 applicants in its first 2 months of operations, now we have 150 graduates in 3 locations between Venezuela and Miami in our first year of operations. I have developed an expansion strategy in partnership with co-working spaces and a big language academy, to open 4 locations per year, rising student acquisition by 150% and revenues by 200% in the next 24 months.</p>
+									<p>Co-founded and director of the company, an academy teaching people to code and build awesome digital products. The academy had 350 applicants in its first 2 months of operations, now we have 250 graduates in 3 locations between Venezuela and Miami in our first year of operations.</p>
 								</article>
 
 								<article>
@@ -60,14 +58,19 @@
 
 						<section>
 							<div class="sectionTitle">
-								<h1>CTO Experience</h1>
+								<h1>As a developer</h1>
 							</div>
 							
 							<div class="sectionContent">
 								<article>
-									<h2>Technical Leader and Developer, <small>March 2010 – February 2015</small></h2>
+									<h2>Lead Developer, <small>April 2016 – Now</small></h2>
+									<p class="subDetails">Project: Breatheco.de <a href="https://www.breatheco.de">https://www.breatheco.de/</a></p>
+									<p>Developed an LMS for blended learning to 4Geeks Academy students, For the API used Slim PHP and Eloquent ORM. For the front end used Javascript, React JS and WordPress.</p>
+								</article>
+								<article>
+									<h2>Lead Developer, <small>March 2010 – February 2015</small></h2>
 									<p class="subDetails">Project: Geeksfactory.co <a href="http://www.geeksfactory.co">http://www.geeksfactory.co/</a></p>
-									<p>Y was the only designer and developer, is an ERP for dev-shops written in PHP, Javascript and Mysql. I developed the application with my own MVC framework. Integrating API’s of DigitalOcean, Pivotal Tracker and Google Apps.</p>
+									<p>Lead developer for this small ERP intended for dev-shops, written in PHP, Javascript and Mysql. I developed the application with my own MVC framework. Integrating API’s of DigitalOcean, Pivotal Tracker and Google Apps.</p>
 								</article>
 								<article>
 									<h2>Co-founder and CTO, <small>August 2013 – July 2014</small></h2>
@@ -80,13 +83,13 @@
 									<p>Design, development, launch and growth a social network for neighbors, the product had 2 modules, the web client: Using PHP, Mysql, jQuery and Javascript (Backbone). And the Restful API that was made in Python and GoogleAppEngine. PyUnit for unit testing. Facebook Oauth, Google Contacts and some other public API’s.</p>
 								</article>
 								<article>
-									<h2>Co-founder and CTO, Feb <small>2010 – April 2011</small></h2>
+									<h2>Co-founder and CTO, <small>Feb 2010 – April 2011</small></h2>
 									<p class="subDetails">iVoted.com (not live)</p>
 									<p>Online audience response system divided in two modules: Java (Tomcat) and Javascript (APE Server) to process live real-time answers with HTML5. Web application in HTML5, PHP, and MYSQL. To accept answers with twitter and email we user Java and integrate with Twitter and IMAP.</p>
 								</article>
 								<article>
 									<h2>Wordpress developments, <small>Oct 2009 - Now.</small></h2>
-									<p>Some of the websites developed: <a href="http://www.puertasviso.com.pa/">http://www.puertasviso.com.pa/</a>, <a href="4Geeksacademy.com">4Geeksacademy.com</a>, <a href="incnologyerp.com">http://incnologyerp.com</a>, <a href="">http://enevenezuela.org</a>, <a href="http://comunidad.4geeks.co">http://comunidad.4geeks.co</a>, <a href="https://www.cuevasocial.com">https://www.cuevasocial.com</a></p>
+									<p>More than 50 websites developed, 3 wordpress pugins and 2 composer packages.</p>
 								</article>
 							</div>
 							<div class="clear"></div>
